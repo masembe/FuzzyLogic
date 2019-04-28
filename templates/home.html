@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>Property Evaluation Tool</h3>
+    <form action="/result" method="POST">
+        <div class="form-group">
+            <label for="distance">Distance from City Centre</label>
+            <input type="number" class="form-control" name="distance" min="0" max="10" step="any" placeholder="Distance in km">
+        </div>
+        <div class="form-group">
+            <label for="age">Age of the Property</label>
+            <input type="number" class="form-control" name="age" min="0" max="10" step="any" placeholder="Age in years">
+        </div>
+        <div class="form-group">
+                <label for="population">Population of the area</label>
+                <input type="number" class="form-control" name="population" min="1" max="10" step="any" placeholder="Your input here will be multiplied by a million">
+        </div>
+        <div class="form-group">
+                <label for="energy_rating">Energy Rating of the property</label>
+                <input type="number" class="form-control" name="energy_rating" min="1" max="100" placeholder="Energy rating of the property.">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}
