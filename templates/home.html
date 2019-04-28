@@ -5,19 +5,19 @@
     <form action="/result" method="POST">
         <div class="form-group">
             <label for="distance">Distance from City Centre</label>
-            <input type="number" class="form-control" name="distance" min="0" max="10" step="any" placeholder="Distance in km">
+            <input type="number" class="form-control" name="distance" min="0" max="10" step="any" placeholder="Distance in km" label="distance">
         </div>
         <div class="form-group">
             <label for="age">Age of the Property</label>
-            <input type="number" class="form-control" name="age" min="0" max="10" step="any" placeholder="Age in years">
+            <input type="number" class="form-control" name="age" min="0" max="10" step="any" placeholder="Age in years" label="age">
         </div>
         <div class="form-group">
                 <label for="population">Population of the area</label>
-                <input type="number" class="form-control" name="population" min="1" max="10" step="any" placeholder="Your input here will be multiplied by a million">
+                <input type="number" class="form-control" name="population" min="0" max="10" step="any" placeholder="Your input here will be multiplied by a million" label="population">
         </div>
         <div class="form-group">
                 <label for="energy_rating">Energy Rating of the property</label>
-                <input type="number" class="form-control" name="energy_rating" min="1" max="100" placeholder="Energy rating of the property.">
+                <input type="number" class="form-control" name="energy_rating" min="0" max="100" placeholder="Energy rating of the property." label="energy_rating">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
