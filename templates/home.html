@@ -2,20 +2,23 @@
 
 {% block content %}
     <h3>Property Evaluation Tool</h3>
+
+    <p>This is a fuzzy logic decision making system used to give a percentage price increase estimate of a property from base price, given the criteria listed below;</p>
+
     <form action="/result" method="POST">
-    <label for="distance">Distance from City Centre</label>
+    <label for="distance">Distance from City Centre(in km)</label>
         <div class="form-group">
             <input type="number" class="form-control" id="distance" name="distance" min="0" max="10" step="any" placeholder="Distance in km">
         </div>
-        <label for="age">Age of the Property</label>
+        <label for="age">Age of the Property(in years)</label>
         <div class="form-group">
             <input type="number" class="form-control" id="age" name="age" min="0" max="10" step="any" placeholder="Age in years" >
         </div>
-        <label for="population">Population of the area</label>
+        <label for="population">Population of the area(in ,000,000s)</label>
         <div class="form-group">
                 <input type="number" class="form-control" id="population" name="population" min="0" max="10" step="any" placeholder="Your input here will be multiplied by a million">
         </div>
-        <label for="energy_rating">Energy Rating of the property</label>
+        <label for="energy_rating">Energy Rating of the property(from 0-100)</label>
         <div class="form-group">
                 <input type="number" class="form-control" id="energy_rating" name="energy_rating" min="0" max="100" placeholder="Energy rating of the property.">
         </div>

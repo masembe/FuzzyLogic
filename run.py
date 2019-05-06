@@ -16,8 +16,7 @@ def result():
         age = float(request.form['age'])
         population = float(request.form['population'])
         energy_rating = int(request.form['energy_rating'])
-        result = compute_price_increase(
-            distance, age, population, energy_rating)
+        result = round(compute_price_increase(distance, age, population, energy_rating), 2)
 
         return render_template("result.html", result=result)
 
