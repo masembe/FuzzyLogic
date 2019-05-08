@@ -36,10 +36,10 @@ set_obj(population, 'low', [0, 1, 1], 'm', [], 'high', [1, 5, 10, 10])
 set_obj(energy_rating, 'bad', [1, 1, 40], 'medium', [35, 55, 80], 'good', [70, 100, 100])
 
 # proof that they all work, lemme visualize: distance is poor, average, good with the use of the view function.
-# distance.view()
-# age.view()
-# population.view()
-# energy_rating.view()
+distance.view()
+age.view()
+population.view()
+energy_rating.view()
 
 
 # Lets create the fuzzy rules
@@ -88,4 +88,4 @@ def compute_price_increase(distance, age, population, energy_rating):
 # print(compute_price_increase(8, 2, 0, 0))
 
 # This displays the shape for purposes of debugging.
-#price_increase.view(sim=price_increase_)
+price_increase.view(sim=price_increase_)
